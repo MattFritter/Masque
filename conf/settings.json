@@ -1,0 +1,10 @@
+{
+	"Additional Headers": 9,
+	"Mandatory": [
+		"User-Agent",
+		"Accept"
+	],
+	"Max Delay": 900,
+	"Min Delay": 100,
+	"Timeout": 10000
+}

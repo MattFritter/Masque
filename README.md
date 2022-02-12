@@ -17,4 +17,12 @@ In addition to randomizing the HTTP headers, **masque** can also add a randomize
 
 # Using Masque
 
-Tl;dr coming soon
+**masque** can be easily installed in existing or new Python applications. Simply copy ```masque.py``` and the ```conf``` directory into your Python code directory, and replace all existing imports of urlopen() with the **masque** equivalent:
+
+```python
+from masque import urlopen
+
+print(urlopen('https://en.wikipedia.org/wiki/Python_(programming_language)').read())
+```
+
+You can use **masque**'s ```urlopen()``` function exactly as you would the standard ```urllib``` version. This includes the ability to pass in data for POST requests, use a pre-built ```Request``` object, and set custom timeouts.
